@@ -1,0 +1,30 @@
+; ============================================================
+; SpartanFade - BTCUSDm (Exness) - CONSERVATIVE
+; Validated 2012-2026: +52% over 14 years (3.7%/yr)
+; ------------------------------------------------------------
+; RISK: 1.0% per trade = SAFE baseline
+; Trades ~100/year, 10-min exposure only, hard flat at 9:40 ET
+; ============================================================
+InpMagicNumber=793030
+InpRiskPerTradePct=1.0
+InpServerUTCOffset=0
+; --- Matrix 1: Anchor (validated optimum) ---
+InpFadeThresholdPct=0.15
+InpLongOnly=false
+InpShortSizeFactor=0.5
+InpTradeTuesday=false
+; --- Matrix 2: Variance ---
+InpAbortCeilingPct=1.0
+InpVolAbortMult=3.0
+InpVolMedianSessions=30
+InpMaxSpreadPoints=1500
+InpMaxTickAgeSec=5
+; --- Matrix 3: Execution ---
+InpHardSL_Pct=0.5
+InpBE_TriggerPct=0.25
+InpRunnerMode=false
+InpRunnerTrailPct=0.30
+; --- Plan B ---
+InpCooldownLosses=3
+InpCooldownDays=5
+InpMaxWeeklyDD_Pct=3.0

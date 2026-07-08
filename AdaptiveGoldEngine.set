@@ -1,0 +1,26 @@
+; ============================================================
+; Adaptive Gold Engine - XAUUSDm (Exness) - SCALING mode
+; UNCAPPED trailing runner + auto-scaling risk (% of balance)
+; ------------------------------------------------------------
+; RISK NOTE (backtest 2024-26, $1500 start, % SCALING mode):
+;   0.5-1.0% => +60% profit, 34% max DD (RECOMMENDED - safe)
+;   1.5% risk => +55% profit, 37% DD (moderate)
+;   2.0% risk => +44% profit, 46% DD (aggressive)
+;   3.0% risk => +22% profit, 59% DD (very dangerous)
+; As balance grows, $-risk per trade grows. As it shrinks, risk shrinks.
+; ============================================================
+InpBrokerGmtOffset=0
+; --- RISK (scaling mode: fixed-$ OFF, % ON) ---
+InpRiskPercent=1.0
+InpFixedRiskUSD=0.0
+InpMaxDailyLoss=50.0
+InpMaxDailyProfit=0.0
+InpUseAutoLot=true
+InpFixedLot=0.01
+; --- TP / TRAIL (uncapped profit side) ---
+InpUsePartialTP=true
+InpTP1Atr=1.5
+InpTP1ClosePct=50.0
+InpTpAtr=0.0
+InpSlAtr=2.0
+InpTrailAtr=2.0

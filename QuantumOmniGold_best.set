@@ -1,0 +1,34 @@
+; Quantum OmniGold - "least-bad" reference set (NOT recommended for live)
+; From walk-forward study on real gold hourly data 2024-2026.
+; Out-of-sample result was still -2.5%. Demo/research only.
+InpRiskLevel=0
+InpMaxDailyLoss=50.0
+InpMaxDailyProfit=50.0
+InpUseAutoLot=true
+InpRiskPercent=0.5
+InpFixedLot=0.01
+InpStopLoss=600
+InpTakeProfit1=250
+InpTakeProfit2=450
+InpTP1ClosePct=50.0
+InpTrailStart=150
+InpTrailStop=120
+InpTrailStep=20
+InpZZDepth=12
+InpZZDeviation=5
+InpZZBackstep=3
+InpMAPeriod=30
+InpMATF=16385
+InpMAMethod=1
+InpStochK=5
+InpStochD=3
+InpStochSlowing=3
+InpStochOB=85.0
+InpStochOS=15.0
+InpMaxSpread=50
+InpTradingHourStart=1
+InpTradingHourEnd=22
+InpMagic=20260701
+InpComment=QOG
+InpShowPanel=true
+InpAlerts=true

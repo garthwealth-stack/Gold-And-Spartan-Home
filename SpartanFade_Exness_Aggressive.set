@@ -1,0 +1,31 @@
+; ============================================================
+; SpartanFade - BTCUSDm (Exness) - AGGRESSIVE
+; Validated 2012-2026: +52% over 14 years @ 1% risk
+; ------------------------------------------------------------
+; RISK: 2.5% per trade = AGGRESSIVE (expect ~8-10%/yr)
+; Why safe to dial up: only 10-min exposure/day, hard flat, circuit breakers
+; Max DD unknown but mitigated by short hold time + weekly cap
+; ============================================================
+InpMagicNumber=793031
+InpRiskPerTradePct=2.5
+InpServerUTCOffset=0
+; --- Matrix 1: Anchor (validated optimum) ---
+InpFadeThresholdPct=0.15
+InpLongOnly=false
+InpShortSizeFactor=0.5
+InpTradeTuesday=false
+; --- Matrix 2: Variance ---
+InpAbortCeilingPct=1.0
+InpVolAbortMult=3.0
+InpVolMedianSessions=30
+InpMaxSpreadPoints=1500
+InpMaxTickAgeSec=5
+; --- Matrix 3: Execution ---
+InpHardSL_Pct=0.5
+InpBE_TriggerPct=0.25
+InpRunnerMode=false
+InpRunnerTrailPct=0.30
+; --- Plan B: TIGHTER for aggressive mode ---
+InpCooldownLosses=2
+InpCooldownDays=3
+InpMaxWeeklyDD_Pct=5.0
